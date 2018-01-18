@@ -1,0 +1,65 @@
+syntax = "proto3";
+package ApiKeys;
+
+option go_package = "protocol";
+
+message ApiKey {
+  string role = 1;
+  string token = 2;
+  bool enabled = 3;
+  string userID = 4;
+}
+
+/**
+ * A Request that you should document
+ */
+message GenerateRequest {
+  string role = 1;
+}
+
+/**
+ * A Response that you should document
+ */
+message GenerateResponse {
+  ApiKey apiKey = 1;
+}
+
+/**
+ * A Request that you should document
+ */
+message EnableRequest {
+  string token = 1;
+}
+
+/**
+ * A Response that you should document
+ */
+message EnableResponse {
+}
+
+/**
+ * A Request that you should document
+ */
+message DisableRequest {
+  string token = 1;
+}
+
+/**
+ * A Response that you should document
+ */
+message DisableResponse {
+}
+
+/**
+ * A Request that you should document
+ */
+message GetRequest {
+  string role = 1;
+}
+
+/**
+ * A Response that you should document
+ */
+message GetResponse {
+  ApiKey apiKey = 1;
+}

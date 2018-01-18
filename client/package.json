@@ -1,0 +1,10 @@
+{
+  "name": "taranaki-client",
+  "version": "0.0.0",
+  "description": "a client for taranaki",
+  "main": "index.js",
+  "repository": "https://github.com/example/taranaki",
+  "author": "bguiz",
+  "license": "NIL",
+  "private": true
+}
